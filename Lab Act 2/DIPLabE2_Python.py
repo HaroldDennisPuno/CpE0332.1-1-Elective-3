@@ -27,13 +27,13 @@ center_pixel = img[center_row, center_col]
 print('Center pixel value:', center_pixel)
 
 # Basic arithmetic operations (add constant value to all pixels)
-brightened_img = np.clip(img + 50, 0, 255).astype(np.uint8)
+brightened_img = np.clip(img, 75, 245).astype(np.uint8)
 cv2.imshow('Brightened Image', brightened_img)
 cv2.waitKey(0)
 
 # Basic geometric operation (flipping image horizontally)
 flipped_img = cv2.flip(img, 1)
-cv2.imshow('Image Flipped Horizontally', flipped_img)
+cv2.imshow('Horizontally Flipped Image', flipped_img)
 cv2.waitKey(0)
 
 cv2.destroyAllWindows()
