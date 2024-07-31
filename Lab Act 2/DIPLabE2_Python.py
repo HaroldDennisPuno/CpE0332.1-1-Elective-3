@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-#Surname, First Name 
+#Puno, Harold Dennis R.
 
 # Read the image
 img = cv2.imread('flower.jpg')
